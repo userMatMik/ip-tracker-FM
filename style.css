@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+:root {
+    --clr-primary: hsl(0, 0%, 17%);
+    --clr-accent: hsl(0, 0%, 59%);
+
+    /* font-size 10px = 1rem */
+    font-size: 62.5%;
+   
+    font-family: "Rubik", sans-serif;
+}
+
+/* Typhography */
+h1 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+h2 {
+   font-size: 1.4rem;
+   font-weight: 500; 
+}
+
+p {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+input {
+    font-family: "Rubik", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.header {
+    min-height: 30vh;
+    width: 100vw;
+    background-image: url(./images/pattern-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid; 
+    place-content: center;
+    position: relative;
+}
+
+.ip-search {
+    display: flex;
+    
+}
+.input {
+    padding: 1.5rem;
+    display: block;
+    border: none;
+}
+
+.btn{
+    background-color: var(--clr-primary);
+    background-image: url(./images/icon-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1.5rem;
+    border: none;
+    display: block;
+    border: none;
+    border-radius: 0 1rem 1rem 0;
+    cursor: pointer;
+    /* background-size: cover;
+    background-position:center; */
+}
+
+.ip-details {
+    width: 100rem;
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: white;
+    padding: 3rem 4rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    z-index: 5;
+    
+}
+
+.ip-detail {
+    border-right: 1px solid var(--clr-accent);
+    flex: 1;
+}
+
+.map-container {
+    height: 65rem;
+    z-index: 1;
+  }
